@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "KSocket.h"
+#import "GCDAsyncUdpSocket.h"
 
-@interface ViewController ()<KSocketDelegate,UITextFieldDelegate>{
-    KSocket *socket;
-//    GCDAsyncUdpSocket *udpSocket;
+@interface ViewController ()<GCDAsyncUdpSocketDelegate,UITextFieldDelegate>{
+//    KSocket *socket;
+    long tag;
+    GCDAsyncUdpSocket *udpSocket;
 }
 @property (weak, nonatomic) IBOutlet UIButton *liveBtn;
 @property (weak, nonatomic) IBOutlet UIButton *recode;
@@ -27,45 +28,83 @@
     // Do any additional setup after loading the view, typically from a nib.
     //get KSocket instance
     
-//    udpSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+    udpSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
+    NSError *error = nil;
     
-    socket  = [KSocket sharedInstance];
-    socket.delegate = self;
+    if (![udpSocket bindToPort:9090 error:&error])
+    {
+        NSLog(@"Error binding: %@", error);
+        return;
+    }
+    if (![udpSocket enableBroadcast:YES error:&error]) {
+        NSLog(@"Error enableBroadcast (bind): %@", error);
+        return;
+    }
+    if (![udpSocket joinMulticastGroup:@"224.0.0.1"  error:&error]) {
+        NSLog(@"Error joinMulticastGroup (bind): %@", error);
+        return;
+    }
+    if (![udpSocket beginReceiving:&error])
+    {
+        NSLog(@"Error receiving: %@", error);
+        return;
+    }
     
-    [self connectAction];
+    NSLog(@"Ready");
+    
+//    socket  = [KSocket sharedInstance];
+//    socket.delegate = self;
+    
+//    [self connectAction];
     
     }
 //connect socket
--(void)connectAction{
-    if(![socket isRunning]){
-        
+//-(void)connectAction{
+//    if(![socket isRunning]){
+    
         
 //        if ([socket connect:<#(NSString *)#> port:<#(int)#>]) {
 //            []
 //        }
         
 //        [socket connect:@"192.168.0.125" port:9600];
-        [socket connect:@"192.168.6.19" port:9090];
-    }
+//        [socket connect:@"192.168.6.19" port:9090];
+//    }
     
-}
+//}
 
 
 
 //send byte array
 -(void)sendAction:(char*)data{
-    
-    if ([socket isRunning] == NO) {
-        [self connectAction];
+    NSString *host = @"192.168.6.19";
+    if ([host length] == 0)
+    {
+        NSLog(@"Address required");
+        return;
     }
     
-    if (data == nil) {
+    int port = 9090;
+    if (port <= 0 || port > 65535)
+    {
+        NSLog(@"Valid port required");
         return;
     }
     
     NSData *sendingData = [NSData dataWithBytes:data length:sizeof(data)];
-    [socket sendData:sendingData];
+    [udpSocket sendData:sendingData toHost:host port:port withTimeout:-1 tag:tag];
+//    if ([socket isRunning] == NO) {
+//        [self connectAction];
+//    }
+//    
+//    if (data == nil) {
+//        return;
+//    }
+//    
+    
+//    [socket sendData:sendingData];
+    tag++;
 }
 
 
@@ -192,6 +231,38 @@
     
 
 }
+
+
+-(void)udpSocket:(GCDAsyncUdpSocket *)sock didConnectToAddress:(NSData *)address
+{
+    NSLog(@"Message didConnectToAddress %@",[[NSString alloc]initWithData:address encoding:NSUTF8StringEncoding]);
+}
+
+-(void)udpSocket:(GCDAsyncUdpSocket *)sock didNotConnect:(NSError *)error
+{
+    NSLog(@"Message didNotConnect %@",error);
+}
+
+-(void)udpSocket:(GCDAsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError *)error
+{
+    NSLog(@"Message didNotSendDataWithTag %@",error);
+}
+
+-(void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data fromAddress:(NSData *)address withFilterContext:(id)filterContext
+{
+    NSLog(@"Message didReceiveData %@ filterContext is %@", [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding],filterContext);
+}
+
+-(void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag
+{
+    NSLog(@"Message didSendDataWithTag");
+}
+
+-(void)udpSocketDidClose:(GCDAsyncUdpSocket *)sock withError:(NSError *)error
+{
+    NSLog(@"Message withError %@",error);
+}
+
 
 //popup alertDialog
 - (void)popupDialog:(NSString*)info{
