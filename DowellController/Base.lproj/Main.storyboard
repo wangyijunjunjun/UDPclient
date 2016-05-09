@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUT-1N-rDy">
+                                <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0X8-eY-7cz">
+                                        <rect key="frame" x="86" y="18" width="203" height="121"/>
+                                        <state key="normal" image="live.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCm-nN-SbH">
+                                        <rect key="frame" x="74" y="79" width="119" height="158"/>
+                                        <state key="normal" image="pause.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUU-FW-ZsU">
+                                        <rect key="frame" x="189" y="74" width="113" height="163"/>
+                                        <state key="normal" image="stop.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acv-Cf-op2">
+                                        <rect key="frame" x="164" y="47" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="直播">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" title="已暂停">
+                                            <color key="titleColor" red="0.87058823529411766" green="0.20392156862745098" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="live:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7n-Qa-QdI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBR-KF-VBr">
+                                        <rect key="frame" x="99" y="163" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="暂停">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtk-Nq-SGf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZM-6Q-aZO">
+                                        <rect key="frame" x="284" y="326" width="73" height="73"/>
+                                        <state key="normal" image="studentfeature.png"/>
+                                        <connections>
+                                            <action selector="studentFeature:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7v-Mh-QiM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xL-st-DFH">
+                                        <rect key="frame" x="26" y="425" width="70" height="70"/>
+                                        <state key="normal" image="teacherpanoramic.png"/>
+                                        <connections>
+                                            <action selector="teacherFullScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dk-gx-u0e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBD-pv-acq">
+                                        <rect key="frame" x="286" y="422" width="71" height="75"/>
+                                        <state key="normal" image="studentpanoramic.png"/>
+                                        <connections>
+                                            <action selector="studentFullScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rvL-pI-Bom"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hv-vP-CvR">
+                                        <rect key="frame" x="28" y="516" width="68" height="72"/>
+                                        <state key="normal" image="blackboardwriting.png"/>
+                                        <connections>
+                                            <action selector="blackboardWriting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4o-VQ-LGp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYA-Er-GMb">
+                                        <rect key="frame" x="28" y="326" width="68" height="73"/>
+                                        <state key="normal" image="teacherfeature.png"/>
+                                        <connections>
+                                            <action selector="teacherFeature:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yip-Yh-ge4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zan-r6-yAR">
+                                        <rect key="frame" x="0.0" y="255" width="418" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96b-S4-e6E">
+                                        <rect key="frame" x="120" y="275" width="134" height="29"/>
+                                        <state key="normal" image="off.png"/>
+                                        <state key="selected" image="ON.png"/>
+                                        <connections>
+                                            <action selector="recodeByHand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJN-Hk-lN6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="手动导播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdQ-Yh-Whk">
+                                        <rect key="frame" x="164" y="312" width="74" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2v-M0-OVJ">
+                                        <rect key="frame" x="138" y="79" width="101" height="100"/>
+                                        <state key="normal" image="transcribe.png"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="录制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3E-s5-8JE">
+                                        <rect key="frame" x="173" y="118" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-D2-j2V">
+                                        <rect key="frame" x="222" y="163" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="停止">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNl-yX-WhQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIy-Y7-uL1">
+                                        <rect key="frame" x="287" y="516" width="70" height="72"/>
+                                        <state key="normal" image="VGA.png"/>
+                                        <connections>
+                                            <action selector="VGA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fXp-RJ-Cbx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.086274509803921567" green="0.090196078431372548" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="96b-S4-e6E" firstAttribute="leading" secondItem="kUT-1N-rDy" secondAttribute="leading" constant="120" id="cBT-xv-lfQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="96b-S4-e6E" secondAttribute="trailing" constant="121" id="jq2-fb-Gux"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7gs-ug-a90">
+                                <rect key="frame" x="0.0" y="21" width="420" height="44"/>
+                                <color key="barTintColor" red="0.12941176470588237" green="0.13333333333333333" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.23609310734354852" green="0.2437358571397609" blue="0.25188595562570582" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoD-ac-YbC">
+                                <rect key="frame" x="13" y="30" width="26" height="25"/>
+                                <state key="normal" backgroundImage="switch.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开关" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-gf-fzQ">
+                                <rect key="frame" x="47" y="32" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcW-lh-qJC">
+                                <rect key="frame" x="300" y="30" width="25" height="24"/>
+                                <state key="normal" backgroundImage="configuration.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="配置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rw3-K8-fmZ">
+                                <rect key="frame" x="333" y="32" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.086274509803921567" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rw3-K8-fmZ" secondAttribute="trailing" constant="-20" id="Euz-mv-TiN"/>
+                            <constraint firstItem="rw3-K8-fmZ" firstAttribute="leading" secondItem="kcW-lh-qJC" secondAttribute="trailing" constant="8" id="z8d-qE-duo"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="liveBtn" destination="acv-Cf-op2" id="51u-NE-dgU"/>
+                        <outlet property="recode" destination="96b-S4-e6E" id="FvB-yJ-MPe"/>
+                        <outlet property="recodeLabel" destination="sdQ-Yh-Whk" id="pMI-rM-xBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305.5" y="436.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ON.png" width="80" height="29"/>
+        <image name="VGA.png" width="86" height="86"/>
+        <image name="blackboardwriting.png" width="86" height="86"/>
+        <image name="configuration.png" width="23" height="23"/>
+        <image name="live.png" width="245" height="143"/>
+        <image name="off.png" width="80" height="29"/>
+        <image name="pause.png" width="142" height="208"/>
+        <image name="stop.png" width="144" height="214"/>
+        <image name="studentfeature.png" width="86" height="86"/>
+        <image name="studentpanoramic.png" width="86" height="86"/>
+        <image name="switch.png" width="31" height="31"/>
+        <image name="teacherfeature.png" width="86" height="86"/>
+        <image name="teacherpanoramic.png" width="86" height="86"/>
+        <image name="transcribe.png" width="117" height="117"/>
+    </resources>
+</document>

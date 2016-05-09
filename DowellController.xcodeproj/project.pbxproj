@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1AF72E21CD1AD5F00A2A913 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF72E11CD1AD5F00A2A913 /* main.m */; };
+		D1AF72E51CD1AD5F00A2A913 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF72E41CD1AD5F00A2A913 /* AppDelegate.m */; };
+		D1AF72E81CD1AD5F00A2A913 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF72E71CD1AD5F00A2A913 /* ViewController.m */; };
+		D1AF72EB1CD1AD5F00A2A913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72E91CD1AD5F00A2A913 /* Main.storyboard */; settings = {ASSET_TAGS = (sdfsdfsd, ); }; };
+		D1AF72ED1CD1AD5F00A2A913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72EC1CD1AD5F00A2A913 /* Assets.xcassets */; };
+		D1AF72F01CD1AD5F00A2A913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72EE1CD1AD5F00A2A913 /* LaunchScreen.storyboard */; };
+		D1AF73071CD1B5F700A2A913 /* bg in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72F81CD1B5F700A2A913 /* bg */; };
+		D1AF73081CD1B5F700A2A913 /* blackboardwriting.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72F91CD1B5F700A2A913 /* blackboardwriting.png */; };
+		D1AF73091CD1B5F700A2A913 /* configuration.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72FA1CD1B5F700A2A913 /* configuration.png */; };
+		D1AF730A1CD1B5F700A2A913 /* live.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72FB1CD1B5F700A2A913 /* live.png */; };
+		D1AF730B1CD1B5F700A2A913 /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72FC1CD1B5F700A2A913 /* off.png */; };
+		D1AF730C1CD1B5F700A2A913 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72FD1CD1B5F700A2A913 /* pause.png */; };
+		D1AF730D1CD1B5F700A2A913 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72FE1CD1B5F700A2A913 /* stop.png */; };
+		D1AF730E1CD1B5F700A2A913 /* studentfeature.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72FF1CD1B5F700A2A913 /* studentfeature.png */; };
+		D1AF730F1CD1B5F700A2A913 /* studentpanoramic.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73001CD1B5F700A2A913 /* studentpanoramic.png */; };
+		D1AF73101CD1B5F700A2A913 /* switch.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73011CD1B5F700A2A913 /* switch.png */; };
+		D1AF73111CD1B5F700A2A913 /* teacherfeature.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73021CD1B5F700A2A913 /* teacherfeature.png */; };
+		D1AF73121CD1B5F700A2A913 /* teacherpanoramic.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73031CD1B5F700A2A913 /* teacherpanoramic.png */; };
+		D1AF73131CD1B5F700A2A913 /* transcribe.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73041CD1B5F700A2A913 /* transcribe.png */; };
+		D1AF73141CD1B5F700A2A913 /* VGA.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73051CD1B5F700A2A913 /* VGA.png */; };
+		D1AF73151CD1B5F700A2A913 /* 按钮BG.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73061CD1B5F700A2A913 /* 按钮BG.png */; };
+		D1AF731F1CD1B60400A2A913 /* blackboardwriting_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73161CD1B60400A2A913 /* blackboardwriting_pressed.png */; };
+		D1AF73201CD1B60400A2A913 /* ON.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73171CD1B60400A2A913 /* ON.png */; };
+		D1AF73211CD1B60400A2A913 /* studentfeature_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73181CD1B60400A2A913 /* studentfeature_pressed.png */; };
+		D1AF73221CD1B60400A2A913 /* studentpanorama_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF73191CD1B60400A2A913 /* studentpanorama_pressed.png */; };
+		D1AF73231CD1B60400A2A913 /* teacherfeature_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF731A1CD1B60400A2A913 /* teacherfeature_pressed.png */; };
+		D1AF73241CD1B60400A2A913 /* teacherpanorama_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF731B1CD1B60400A2A913 /* teacherpanorama_pressed.png */; };
+		D1AF73251CD1B60400A2A913 /* transcribe_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF731C1CD1B60400A2A913 /* transcribe_pressed.png */; };
+		D1AF73261CD1B60400A2A913 /* VGA_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF731D1CD1B60400A2A913 /* VGA_pressed.png */; };
+		D1AF73271CD1B60400A2A913 /* 按钮BG.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AF731E1CD1B60400A2A913 /* 按钮BG.png */; };
+		D1AF73331CD1DFE100A2A913 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF732D1CD1DFE100A2A913 /* GCDAsyncSocket.m */; };
+		D1AF73341CD1DFE100A2A913 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF732F1CD1DFE100A2A913 /* GCDAsyncUdpSocket.m */; };
+		D1AF73351CD1DFE100A2A913 /* KSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF73311CD1DFE100A2A913 /* KSocket.m */; };
+		D1AF73431CD1ED6C00A2A913 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF73391CD1ED6C00A2A913 /* DDAbstractDatabaseLogger.m */; };
+		D1AF73441CD1ED6C00A2A913 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF733B1CD1ED6C00A2A913 /* DDASLLogger.m */; };
+		D1AF73451CD1ED6C00A2A913 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF733D1CD1ED6C00A2A913 /* DDFileLogger.m */; };
+		D1AF73461CD1ED6C00A2A913 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF733F1CD1ED6C00A2A913 /* DDLog.m */; };
+		D1AF73471CD1ED6C00A2A913 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF73421CD1ED6C00A2A913 /* DDTTYLogger.m */; };
+		D1AF73501CD1ED8300A2A913 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF734A1CD1ED8300A2A913 /* DDContextFilterLogFormatter.m */; };
+		D1AF73511CD1ED8300A2A913 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF734C1CD1ED8300A2A913 /* DDDispatchQueueLogFormatter.m */; };
+		D1AF73521CD1ED8300A2A913 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AF734E1CD1ED8300A2A913 /* DDMultiFormatter.m */; };
+		D1AF73531CD1ED8300A2A913 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D1AF734F1CD1ED8300A2A913 /* README.txt */; };
+		D1AF73551CD1F4CE00A2A913 /* note.md in Sources */ = {isa = PBXBuildFile; fileRef = D1AF73541CD1F4CE00A2A913 /* note.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D1AF72DD1CD1AD5F00A2A913 /* DowellController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DowellController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AF72E11CD1AD5F00A2A913 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1AF72E31CD1AD5F00A2A913 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1AF72E41CD1AD5F00A2A913 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1AF72E61CD1AD5F00A2A913 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1AF72E71CD1AD5F00A2A913 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1AF72EA1CD1AD5F00A2A913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1AF72EC1CD1AD5F00A2A913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1AF72EF1CD1AD5F00A2A913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1AF72F11CD1AD5F00A2A913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AF72F81CD1B5F700A2A913 /* bg */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bg; path = "../../../Downloads/生成/生成/手机界面/bg"; sourceTree = "<group>"; };
+		D1AF72F91CD1B5F700A2A913 /* blackboardwriting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackboardwriting.png; path = "../../../Downloads/生成/生成/手机界面/blackboardwriting.png"; sourceTree = "<group>"; };
+		D1AF72FA1CD1B5F700A2A913 /* configuration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = configuration.png; path = "../../../Downloads/生成/生成/手机界面/configuration.png"; sourceTree = "<group>"; };
+		D1AF72FB1CD1B5F700A2A913 /* live.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = live.png; path = "../../../Downloads/生成/生成/手机界面/live.png"; sourceTree = "<group>"; };
+		D1AF72FC1CD1B5F700A2A913 /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = off.png; path = "../../../Downloads/生成/生成/手机界面/off.png"; sourceTree = "<group>"; };
+		D1AF72FD1CD1B5F700A2A913 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = "../../../Downloads/生成/生成/手机界面/pause.png"; sourceTree = "<group>"; };
+		D1AF72FE1CD1B5F700A2A913 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = "../../../Downloads/生成/生成/手机界面/stop.png"; sourceTree = "<group>"; };
+		D1AF72FF1CD1B5F700A2A913 /* studentfeature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = studentfeature.png; path = "../../../Downloads/生成/生成/手机界面/studentfeature.png"; sourceTree = "<group>"; };
+		D1AF73001CD1B5F700A2A913 /* studentpanoramic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = studentpanoramic.png; path = "../../../Downloads/生成/生成/手机界面/studentpanoramic.png"; sourceTree = "<group>"; };
+		D1AF73011CD1B5F700A2A913 /* switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch.png; path = "../../../Downloads/生成/生成/手机界面/switch.png"; sourceTree = "<group>"; };
+		D1AF73021CD1B5F700A2A913 /* teacherfeature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teacherfeature.png; path = "../../../Downloads/生成/生成/手机界面/teacherfeature.png"; sourceTree = "<group>"; };
+		D1AF73031CD1B5F700A2A913 /* teacherpanoramic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teacherpanoramic.png; path = "../../../Downloads/生成/生成/手机界面/teacherpanoramic.png"; sourceTree = "<group>"; };
+		D1AF73041CD1B5F700A2A913 /* transcribe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transcribe.png; path = "../../../Downloads/生成/生成/手机界面/transcribe.png"; sourceTree = "<group>"; };
+		D1AF73051CD1B5F700A2A913 /* VGA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VGA.png; path = "../../../Downloads/生成/生成/手机界面/VGA.png"; sourceTree = "<group>"; };
+		D1AF73061CD1B5F700A2A913 /* 按钮BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "按钮BG.png"; path = "../../../Downloads/生成/生成/手机界面/按钮BG.png"; sourceTree = "<group>"; };
+		D1AF73161CD1B60400A2A913 /* blackboardwriting_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackboardwriting_pressed.png; path = "../../../Downloads/生成/生成/手机界面反/blackboardwriting_pressed.png"; sourceTree = "<group>"; };
+		D1AF73171CD1B60400A2A913 /* ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ON.png; path = "../../../Downloads/生成/生成/手机界面反/ON.png"; sourceTree = "<group>"; };
+		D1AF73181CD1B60400A2A913 /* studentfeature_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = studentfeature_pressed.png; path = "../../../Downloads/生成/生成/手机界面反/studentfeature_pressed.png"; sourceTree = "<group>"; };
+		D1AF73191CD1B60400A2A913 /* studentpanorama_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = studentpanorama_pressed.png; path = "../../../Downloads/生成/生成/手机界面反/studentpanorama_pressed.png"; sourceTree = "<group>"; };
+		D1AF731A1CD1B60400A2A913 /* teacherfeature_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teacherfeature_pressed.png; path = "../../../Downloads/生成/生成/手机界面反/teacherfeature_pressed.png"; sourceTree = "<group>"; };
+		D1AF731B1CD1B60400A2A913 /* teacherpanorama_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teacherpanorama_pressed.png; path = "../../../Downloads/生成/生成/手机界面反/teacherpanorama_pressed.png"; sourceTree = "<group>"; };
+		D1AF731C1CD1B60400A2A913 /* transcribe_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = transcribe_pressed.png; path = "../../../Downloads/生成/生成/手机界面反/transcribe_pressed.png"; sourceTree = "<group>"; };
+		D1AF731D1CD1B60400A2A913 /* VGA_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VGA_pressed.png; path = "../../../Downloads/生成/生成/手机界面反/VGA_pressed.png"; sourceTree = "<group>"; };
+		D1AF731E1CD1B60400A2A913 /* 按钮BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "按钮BG.png"; path = "../../../Downloads/生成/生成/手机界面反/按钮BG.png"; sourceTree = "<group>"; };
+		D1AF732C1CD1DFE100A2A913 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = "../../../Downloads/UDPSocket-master 2/UDPSocket/SocketIO/GCDAsyncSocket.h"; sourceTree = "<group>"; };
+		D1AF732D1CD1DFE100A2A913 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = "../../../Downloads/UDPSocket-master 2/UDPSocket/SocketIO/GCDAsyncSocket.m"; sourceTree = "<group>"; };
+		D1AF732E1CD1DFE100A2A913 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "../../../Downloads/UDPSocket-master 2/UDPSocket/SocketIO/GCDAsyncUdpSocket.h"; sourceTree = "<group>"; };
+		D1AF732F1CD1DFE100A2A913 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "../../../Downloads/UDPSocket-master 2/UDPSocket/SocketIO/GCDAsyncUdpSocket.m"; sourceTree = "<group>"; };
+		D1AF73301CD1DFE100A2A913 /* KSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSocket.h; path = "../../../Downloads/UDPSocket-master 2/UDPSocket/SocketIO/KSocket.h"; sourceTree = "<group>"; };
+		D1AF73311CD1DFE100A2A913 /* KSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSocket.m; path = "../../../Downloads/UDPSocket-master 2/UDPSocket/SocketIO/KSocket.m"; sourceTree = "<group>"; };
+		D1AF73381CD1ED6C00A2A913 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDAbstractDatabaseLogger.h"; sourceTree = "<group>"; };
+		D1AF73391CD1ED6C00A2A913 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDAbstractDatabaseLogger.m"; sourceTree = "<group>"; };
+		D1AF733A1CD1ED6C00A2A913 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDASLLogger.h"; sourceTree = "<group>"; };
+		D1AF733B1CD1ED6C00A2A913 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDASLLogger.m"; sourceTree = "<group>"; };
+		D1AF733C1CD1ED6C00A2A913 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDFileLogger.h"; sourceTree = "<group>"; };
+		D1AF733D1CD1ED6C00A2A913 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDFileLogger.m"; sourceTree = "<group>"; };
+		D1AF733E1CD1ED6C00A2A913 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDLog.h"; sourceTree = "<group>"; };
+		D1AF733F1CD1ED6C00A2A913 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDLog.m"; sourceTree = "<group>"; };
+		D1AF73401CD1ED6C00A2A913 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		D1AF73411CD1ED6C00A2A913 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDTTYLogger.h"; sourceTree = "<group>"; };
+		D1AF73421CD1ED6C00A2A913 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/DDTTYLogger.m"; sourceTree = "<group>"; };
+		D1AF73491CD1ED8300A2A913 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/Extensions/DDContextFilterLogFormatter.h"; sourceTree = "<group>"; };
+		D1AF734A1CD1ED8300A2A913 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/Extensions/DDContextFilterLogFormatter.m"; sourceTree = "<group>"; };
+		D1AF734B1CD1ED8300A2A913 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/Extensions/DDDispatchQueueLogFormatter.h"; sourceTree = "<group>"; };
+		D1AF734C1CD1ED8300A2A913 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/Extensions/DDDispatchQueueLogFormatter.m"; sourceTree = "<group>"; };
+		D1AF734D1CD1ED8300A2A913 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/Extensions/DDMultiFormatter.h"; sourceTree = "<group>"; };
+		D1AF734E1CD1ED8300A2A913 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/Extensions/DDMultiFormatter.m"; sourceTree = "<group>"; };
+		D1AF734F1CD1ED8300A2A913 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = "../../../Downloads/UDPSocket-master 3/UDPSocket/SocketIO/Logging/Extensions/README.txt"; sourceTree = "<group>"; };
+		D1AF73541CD1F4CE00A2A913 /* note.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1AF72DA1CD1AD5F00A2A913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1AF72D41CD1AD5F00A2A913 = {
+			isa = PBXGroup;
+			children = (
+				D1AF72DF1CD1AD5F00A2A913 /* DowellController */,
+				D1AF72DE1CD1AD5F00A2A913 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1AF72DE1CD1AD5F00A2A913 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF72DD1CD1AD5F00A2A913 /* DowellController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1AF72DF1CD1AD5F00A2A913 /* DowellController */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF732B1CD1DFA400A2A913 /* SocketIO */,
+				D1AF72F71CD1B5EC00A2A913 /* imgs */,
+				D1AF72E31CD1AD5F00A2A913 /* AppDelegate.h */,
+				D1AF72E41CD1AD5F00A2A913 /* AppDelegate.m */,
+				D1AF72E61CD1AD5F00A2A913 /* ViewController.h */,
+				D1AF72E71CD1AD5F00A2A913 /* ViewController.m */,
+				D1AF72E91CD1AD5F00A2A913 /* Main.storyboard */,
+				D1AF72EC1CD1AD5F00A2A913 /* Assets.xcassets */,
+				D1AF72EE1CD1AD5F00A2A913 /* LaunchScreen.storyboard */,
+				D1AF72F11CD1AD5F00A2A913 /* Info.plist */,
+				D1AF72E01CD1AD5F00A2A913 /* Supporting Files */,
+				D1AF73541CD1F4CE00A2A913 /* note.md */,
+			);
+			path = DowellController;
+			sourceTree = "<group>";
+		};
+		D1AF72E01CD1AD5F00A2A913 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF72E11CD1AD5F00A2A913 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1AF72F71CD1B5EC00A2A913 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF73161CD1B60400A2A913 /* blackboardwriting_pressed.png */,
+				D1AF73171CD1B60400A2A913 /* ON.png */,
+				D1AF73181CD1B60400A2A913 /* studentfeature_pressed.png */,
+				D1AF73191CD1B60400A2A913 /* studentpanorama_pressed.png */,
+				D1AF731A1CD1B60400A2A913 /* teacherfeature_pressed.png */,
+				D1AF731B1CD1B60400A2A913 /* teacherpanorama_pressed.png */,
+				D1AF731C1CD1B60400A2A913 /* transcribe_pressed.png */,
+				D1AF731D1CD1B60400A2A913 /* VGA_pressed.png */,
+				D1AF731E1CD1B60400A2A913 /* 按钮BG.png */,
+				D1AF72F81CD1B5F700A2A913 /* bg */,
+				D1AF72F91CD1B5F700A2A913 /* blackboardwriting.png */,
+				D1AF72FA1CD1B5F700A2A913 /* configuration.png */,
+				D1AF72FB1CD1B5F700A2A913 /* live.png */,
+				D1AF72FC1CD1B5F700A2A913 /* off.png */,
+				D1AF72FD1CD1B5F700A2A913 /* pause.png */,
+				D1AF72FE1CD1B5F700A2A913 /* stop.png */,
+				D1AF72FF1CD1B5F700A2A913 /* studentfeature.png */,
+				D1AF73001CD1B5F700A2A913 /* studentpanoramic.png */,
+				D1AF73011CD1B5F700A2A913 /* switch.png */,
+				D1AF73021CD1B5F700A2A913 /* teacherfeature.png */,
+				D1AF73031CD1B5F700A2A913 /* teacherpanoramic.png */,
+				D1AF73041CD1B5F700A2A913 /* transcribe.png */,
+				D1AF73051CD1B5F700A2A913 /* VGA.png */,
+				D1AF73061CD1B5F700A2A913 /* 按钮BG.png */,
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
+		D1AF732B1CD1DFA400A2A913 /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF732C1CD1DFE100A2A913 /* GCDAsyncSocket.h */,
+				D1AF732D1CD1DFE100A2A913 /* GCDAsyncSocket.m */,
+				D1AF732E1CD1DFE100A2A913 /* GCDAsyncUdpSocket.h */,
+				D1AF732F1CD1DFE100A2A913 /* GCDAsyncUdpSocket.m */,
+				D1AF73301CD1DFE100A2A913 /* KSocket.h */,
+				D1AF73311CD1DFE100A2A913 /* KSocket.m */,
+				D1AF73371CD1ED4400A2A913 /* Logging */,
+			);
+			name = SocketIO;
+			sourceTree = "<group>";
+		};
+		D1AF73371CD1ED4400A2A913 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF73381CD1ED6C00A2A913 /* DDAbstractDatabaseLogger.h */,
+				D1AF73391CD1ED6C00A2A913 /* DDAbstractDatabaseLogger.m */,
+				D1AF733A1CD1ED6C00A2A913 /* DDASLLogger.h */,
+				D1AF733B1CD1ED6C00A2A913 /* DDASLLogger.m */,
+				D1AF733C1CD1ED6C00A2A913 /* DDFileLogger.h */,
+				D1AF733D1CD1ED6C00A2A913 /* DDFileLogger.m */,
+				D1AF733E1CD1ED6C00A2A913 /* DDLog.h */,
+				D1AF733F1CD1ED6C00A2A913 /* DDLog.m */,
+				D1AF73401CD1ED6C00A2A913 /* DDLog+LOGV.h */,
+				D1AF73411CD1ED6C00A2A913 /* DDTTYLogger.h */,
+				D1AF73421CD1ED6C00A2A913 /* DDTTYLogger.m */,
+				D1AF73481CD1ED7300A2A913 /* Extensions */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		D1AF73481CD1ED7300A2A913 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF73491CD1ED8300A2A913 /* DDContextFilterLogFormatter.h */,
+				D1AF734A1CD1ED8300A2A913 /* DDContextFilterLogFormatter.m */,
+				D1AF734B1CD1ED8300A2A913 /* DDDispatchQueueLogFormatter.h */,
+				D1AF734C1CD1ED8300A2A913 /* DDDispatchQueueLogFormatter.m */,
+				D1AF734D1CD1ED8300A2A913 /* DDMultiFormatter.h */,
+				D1AF734E1CD1ED8300A2A913 /* DDMultiFormatter.m */,
+				D1AF734F1CD1ED8300A2A913 /* README.txt */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1AF72DC1CD1AD5F00A2A913 /* DowellController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1AF72F41CD1AD5F00A2A913 /* Build configuration list for PBXNativeTarget "DowellController" */;
+			buildPhases = (
+				D1AF72D91CD1AD5F00A2A913 /* Sources */,
+				D1AF72DA1CD1AD5F00A2A913 /* Frameworks */,
+				D1AF72DB1CD1AD5F00A2A913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DowellController;
+			productName = DowellController;
+			productReference = D1AF72DD1CD1AD5F00A2A913 /* DowellController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1AF72D51CD1AD5F00A2A913 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					sdfsdfsd,
+				);
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = dowell;
+				TargetAttributes = {
+					D1AF72DC1CD1AD5F00A2A913 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = D1AF72D81CD1AD5F00A2A913 /* Build configuration list for PBXProject "DowellController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1AF72D41CD1AD5F00A2A913;
+			productRefGroup = D1AF72DE1CD1AD5F00A2A913 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1AF72DC1CD1AD5F00A2A913 /* DowellController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1AF72DB1CD1AD5F00A2A913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF73141CD1B5F700A2A913 /* VGA.png in Resources */,
+				D1AF730E1CD1B5F700A2A913 /* studentfeature.png in Resources */,
+				D1AF731F1CD1B60400A2A913 /* blackboardwriting_pressed.png in Resources */,
+				D1AF73231CD1B60400A2A913 /* teacherfeature_pressed.png in Resources */,
+				D1AF73271CD1B60400A2A913 /* 按钮BG.png in Resources */,
+				D1AF730A1CD1B5F700A2A913 /* live.png in Resources */,
+				D1AF730D1CD1B5F700A2A913 /* stop.png in Resources */,
+				D1AF73241CD1B60400A2A913 /* teacherpanorama_pressed.png in Resources */,
+				D1AF72F01CD1AD5F00A2A913 /* LaunchScreen.storyboard in Resources */,
+				D1AF730F1CD1B5F700A2A913 /* studentpanoramic.png in Resources */,
+				D1AF72ED1CD1AD5F00A2A913 /* Assets.xcassets in Resources */,
+				D1AF73091CD1B5F700A2A913 /* configuration.png in Resources */,
+				D1AF73221CD1B60400A2A913 /* studentpanorama_pressed.png in Resources */,
+				D1AF72EB1CD1AD5F00A2A913 /* Main.storyboard in Resources */,
+				D1AF73201CD1B60400A2A913 /* ON.png in Resources */,
+				D1AF73101CD1B5F700A2A913 /* switch.png in Resources */,
+				D1AF73111CD1B5F700A2A913 /* teacherfeature.png in Resources */,
+				D1AF730C1CD1B5F700A2A913 /* pause.png in Resources */,
+				D1AF730B1CD1B5F700A2A913 /* off.png in Resources */,
+				D1AF73211CD1B60400A2A913 /* studentfeature_pressed.png in Resources */,
+				D1AF73151CD1B5F700A2A913 /* 按钮BG.png in Resources */,
+				D1AF73071CD1B5F700A2A913 /* bg in Resources */,
+				D1AF73121CD1B5F700A2A913 /* teacherpanoramic.png in Resources */,
+				D1AF73131CD1B5F700A2A913 /* transcribe.png in Resources */,
+				D1AF73261CD1B60400A2A913 /* VGA_pressed.png in Resources */,
+				D1AF73081CD1B5F700A2A913 /* blackboardwriting.png in Resources */,
+				D1AF73531CD1ED8300A2A913 /* README.txt in Resources */,
+				D1AF73251CD1B60400A2A913 /* transcribe_pressed.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1AF72D91CD1AD5F00A2A913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF73461CD1ED6C00A2A913 /* DDLog.m in Sources */,
+				D1AF73511CD1ED8300A2A913 /* DDDispatchQueueLogFormatter.m in Sources */,
+				D1AF73441CD1ED6C00A2A913 /* DDASLLogger.m in Sources */,
+				D1AF73351CD1DFE100A2A913 /* KSocket.m in Sources */,
+				D1AF73331CD1DFE100A2A913 /* GCDAsyncSocket.m in Sources */,
+				D1AF73471CD1ED6C00A2A913 /* DDTTYLogger.m in Sources */,
+				D1AF73341CD1DFE100A2A913 /* GCDAsyncUdpSocket.m in Sources */,
+				D1AF72E81CD1AD5F00A2A913 /* ViewController.m in Sources */,
+				D1AF73431CD1ED6C00A2A913 /* DDAbstractDatabaseLogger.m in Sources */,
+				D1AF72E51CD1AD5F00A2A913 /* AppDelegate.m in Sources */,
+				D1AF73521CD1ED8300A2A913 /* DDMultiFormatter.m in Sources */,
+				D1AF73501CD1ED8300A2A913 /* DDContextFilterLogFormatter.m in Sources */,
+				D1AF73551CD1F4CE00A2A913 /* note.md in Sources */,
+				D1AF73451CD1ED6C00A2A913 /* DDFileLogger.m in Sources */,
+				D1AF72E21CD1AD5F00A2A913 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1AF72E91CD1AD5F00A2A913 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1AF72EA1CD1AD5F00A2A913 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1AF72EE1CD1AD5F00A2A913 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1AF72EF1CD1AD5F00A2A913 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1AF72F21CD1AD5F00A2A913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1AF72F31CD1AD5F00A2A913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1AF72F51CD1AD5F00A2A913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DowellController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dowell.DowellController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1AF72F61CD1AD5F00A2A913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DowellController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dowell.DowellController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1AF72D81CD1AD5F00A2A913 /* Build configuration list for PBXProject "DowellController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AF72F21CD1AD5F00A2A913 /* Debug */,
+				D1AF72F31CD1AD5F00A2A913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1AF72F41CD1AD5F00A2A913 /* Build configuration list for PBXNativeTarget "DowellController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AF72F51CD1AD5F00A2A913 /* Debug */,
+				D1AF72F61CD1AD5F00A2A913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1AF72D51CD1AD5F00A2A913 /* Project object */;
+}
